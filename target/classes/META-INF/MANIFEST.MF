@@ -1,0 +1,31 @@
+Manifest-Version: 1.0
+Built-By: alfredo
+Class-Path: dependency-jars/org.wso2.carbon.authenticator.stub-4.4.36.
+ jar dependency-jars/wsdl4j-1.6.2.wso2v4.jar dependency-jars/axis2-1.6
+ .1-wso2v28.jar dependency-jars/neethi-2.0.4.wso2v5.jar dependency-jar
+ s/XmlSchema-1.4.7.wso2v3.jar dependency-jars/commons-logging-1.2.jar 
+ dependency-jars/axiom-1.2.11.wso2v11.jar dependency-jars/geronimo-sta
+ x-api_1.0_spec-1.0.1.wso2v2.jar dependency-jars/geronimo-stax-api_1.0
+ _spec-1.0.1.jar dependency-jars/woodstox-core-asl-4.2.0.jar dependenc
+ y-jars/stax2-api-3.1.1.jar dependency-jars/stax-api-1.0-2.jar depende
+ ncy-jars/org.wso2.carbon.application.mgt.stub-4.6.49.jar dependency-j
+ ars/axis2-client-1.6.1-wso2v28.jar dependency-jars/axis2-json-1.6.1-w
+ so2v28.jar dependency-jars/woden-1.0.0.M8-wso2v1.jar dependency-jars/
+ org.wso2.securevault-1.0.0.jar dependency-jars/axiom-api-1.2.11.jar d
+ ependency-jars/geronimo-activation_1.1_spec-1.0.2.jar dependency-jars
+ /geronimo-javamail_1.4_spec-1.6.jar dependency-jars/jaxen-1.1.1.jar d
+ ependency-jars/axiom-impl-1.2.11.jar dependency-jars/wstx-asl-3.2.9.j
+ ar dependency-jars/log4j-1.2.14.jar dependency-jars/jline-0.9.94.jar 
+ dependency-jars/junit-3.8.1.jar dependency-jars/commons-io-2.0.jar de
+ pendency-jars/commons-codec-1.2.jar dependency-jars/httpcore-4.3.0.ws
+ o2v1.jar dependency-jars/commons-fileupload-1.3.1.wso2v1.jar dependen
+ cy-jars/commons-codec-1.3.0.wso2v1.jar dependency-jars/commons-httpcl
+ ient-3.1.0.wso2v3.jar dependency-jars/org.wso2.carbon.service.mgt.stu
+ b-4.7.19.jar dependency-jars/commons-cli-1.3.1.jar dependency-jars/aw
+ aitility-3.1.3.jar dependency-jars/hamcrest-library-1.3.jar dependenc
+ y-jars/hamcrest-core-1.3.jar dependency-jars/objenesis-2.6.jar depend
+ ency-jars/log4j-api-2.5.jar dependency-jars/log4j-core-2.5.jar
+Build-Jdk: 1.8.0_161
+Created-By: Maven Integration for Eclipse
+Main-Class: com.wso2.util.WSO2CarbonAppAdmin
+
