@@ -5,17 +5,12 @@ import org.apache.axis2.client.Options;
 import org.apache.axis2.client.ServiceClient;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.omg.CORBA.portable.ApplicationException;
 import org.wso2.carbon.application.mgt.stub.ApplicationAdminExceptionException;
 import org.wso2.carbon.application.mgt.stub.ApplicationAdminStub;
-import org.wso2.carbon.service.mgt.stub.ServiceAdminStub;
-import org.wso2.carbon.service.mgt.stub.types.carbon.ServiceMetaDataWrapper;
 import org.wso2.carbon.application.mgt.stub.types.carbon.ApplicationMetadata;
 import org.wso2.carbon.application.mgt.stub.types.carbon.ArtifactDeploymentStatus;
-import org.wso2.carbon.application.mgt.stub.upload.types.carbon.UploadedFileItem;
 
 import java.rmi.RemoteException;
-import java.util.concurrent.atomic.AtomicBoolean;
 
 public class ApplicationAdminClient {
 	private static Logger logger = LogManager.getLogger();

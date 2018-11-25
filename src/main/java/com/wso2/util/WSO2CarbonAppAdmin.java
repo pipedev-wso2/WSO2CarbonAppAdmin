@@ -9,15 +9,12 @@ import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.awaitility.Awaitility;
 import org.wso2.carbon.application.mgt.stub.ApplicationAdminExceptionException;
 import org.wso2.carbon.application.mgt.stub.types.carbon.ApplicationMetadata;
 import org.wso2.carbon.application.mgt.stub.types.carbon.ArtifactDeploymentStatus;
 import org.wso2.carbon.application.mgt.stub.upload.types.carbon.UploadedFileItem;
 import org.wso2.carbon.authenticator.stub.LoginAuthenticationExceptionException;
 import org.wso2.carbon.authenticator.stub.LogoutAuthenticationExceptionException;
-import org.wso2.carbon.service.mgt.stub.types.carbon.ServiceMetaData;
-import org.wso2.carbon.service.mgt.stub.types.carbon.ServiceMetaDataWrapper;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -28,8 +25,6 @@ import java.rmi.RemoteException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
-import java.util.concurrent.atomic.AtomicBoolean;
 
 import javax.activation.DataHandler;
 
@@ -37,12 +32,12 @@ public class WSO2CarbonAppAdmin {
 	private static Logger logger = LogManager.getLogger();
 
 	public static final String DEPLOY = "deploy";
-	public static final Option deploy = Option.builder("d").argName("deploy").required(true).longOpt("deploy")
+	public static final Option deploy = Option.builder("deploy").argName("deploy").required(true).longOpt("deploy")
 			.desc("Deploy CAR").build();
 
-	public static final String UNDEPLOY = "undeploy";
-	public static final Option undeploy = Option.builder("u").argName("undeploy").required(true).longOpt("undeploy")
-			.desc("Undeploy CAR").build();
+	public static final String DELETE = "delete";
+	public static final Option delete = Option.builder("delete").argName("delete").required(true).longOpt("delete")
+			.desc("Delete CAR").build();
 
 	public static final String FILE = "file";
 	public static final Option file = Option.builder("f").argName("file").required(false).hasArg().longOpt("file")
@@ -59,7 +54,7 @@ public class WSO2CarbonAppAdmin {
 
 		OptionGroup optgrp = new OptionGroup();
 		optgrp.addOption(deploy);
-		optgrp.addOption(undeploy);
+		optgrp.addOption(delete);
 
 		options.addOptionGroup(optgrp);
 		options.addOption(file);
@@ -77,7 +72,7 @@ public class WSO2CarbonAppAdmin {
 				}
 			}
 
-			if (cmdline.hasOption(UNDEPLOY)) {
+			if (cmdline.hasOption(DELETE)) {
 				if ((!cmdline.hasOption(CARAPP_NAME))) {
 					throw new ParseException("Missing required arg: CARAPP_NAME");
 				} else {

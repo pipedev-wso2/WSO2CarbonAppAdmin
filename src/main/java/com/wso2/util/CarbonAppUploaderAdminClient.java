@@ -3,11 +3,6 @@ package com.wso2.util;
 import org.apache.axis2.AxisFault;
 import org.apache.axis2.client.Options;
 import org.apache.axis2.client.ServiceClient;
-import org.wso2.carbon.application.mgt.stub.ApplicationAdminExceptionException;
-import org.wso2.carbon.application.mgt.stub.ApplicationAdminStub;
-import org.wso2.carbon.service.mgt.stub.ServiceAdminStub;
-import org.wso2.carbon.service.mgt.stub.types.carbon.ServiceMetaDataWrapper;
-import org.wso2.carbon.application.mgt.stub.types.carbon.ApplicationMetadata;
 import org.wso2.carbon.application.mgt.stub.upload.CarbonAppUploaderStub;
 import org.wso2.carbon.application.mgt.stub.upload.types.carbon.UploadedFileItem;
 
