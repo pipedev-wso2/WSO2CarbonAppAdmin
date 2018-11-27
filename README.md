@@ -10,7 +10,7 @@ mvn package
 
 java -jar target/WSO2CarbonAppAdmin.jar -deploy -f CAR_FILE_PATH -n CAR_FILE_NAME
 
--d -> deploy <br />
+-deploy -> deploy <br />
 -f -> CAR file <br />
 -n -> CAR Application name <br />
 
@@ -22,7 +22,7 @@ java -jar target/WSO2CarbonAppAdmin.jar -deploy -f /tmp/SampleCompositeApplicati
 
 java -jar target/WSO2CarbonAppAdmin.jar -delete -n CAR_FILE_NAME
 
--u -> undeploy (delete) <br />
+-delete -> undeploy (delete) <br />
 -n -> CAR Application name <br />
 
 Example:
